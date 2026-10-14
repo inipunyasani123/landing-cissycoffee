@@ -7,7 +7,7 @@ const dmserif = DM_Serif_Display({ variable: "--font-dmserif", subsets: ["latin"
 const jakarta = Plus_Jakarta_Sans({ variable: "--font-jakarta", subsets: ["latin"] });
 const caveat = Caveat({ variable: "--font-caveat", subsets: ["latin"], weight: ["500", "700"] });
 
-const SITE = "https://landing-cissycoffee.vercel.app";
+const SITE = "https://landing-cissycoffee.pintuweb.id";
 const JUDUL = "Cissy Coffee — Kedai Kopi dengan Papan Menu Kapur";
 const DESKRIPSI = "Cissy Coffee, kedai kopi di Malang sejak 2019: biji Indonesia yang disangrai sendiri, papan menu yang ditulis ulang setiap pagi, dan kopi untuk acara.";
 

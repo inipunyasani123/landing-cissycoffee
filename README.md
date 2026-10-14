@@ -2,7 +2,7 @@
 
 Cissy Coffee, kedai kopi di Malang sejak 2019: biji Indonesia yang disangrai sendiri, papan menu yang ditulis ulang setiap pagi, dan kopi untuk acara.
 
-**Demo live:** https://landing-cissycoffee.vercel.app
+**Demo live:** https://landing-cissycoffee.pintuweb.id
 
 ![Tangkapan layar Cissy Coffee](public/og.jpg)
 
