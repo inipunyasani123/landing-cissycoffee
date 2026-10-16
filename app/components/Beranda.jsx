@@ -16,7 +16,7 @@ function Sangrai({ n }) {
 export function Hero() {
   const v60 = BIJI[1];
   return (
-    <section className="bg-crema px-6 pt-28 pb-16 md:pt-36 md:pb-24">
+    <section className="bg-crema px-6 pt-24 pb-14 md:pt-36 md:pb-24">
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div>
           <p className="menu-label text-bean/80">Kedai kopi · {KEDAI.alamat.split(', ').pop()} · sejak {KEDAI.sejak}</p>
@@ -35,7 +35,7 @@ export function Hero() {
         </div>
         <figure className="relative">
           <div className="border-[12px] border-[#6b4a2e] shadow-[0_24px_50px_-28px_rgb(42_29_24/0.8)]">
-            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee dengan papan nama di atas pintu dan meja-meja di teras" width={736} height={552} priority className="h-auto w-full" />
+            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee dengan papan nama di atas pintu dan meja-meja di teras" width={736} height={552} loading="eager" sizes="(min-width: 1152px) 34rem, (min-width: 1024px) 46vw, 100vw" className="h-auto w-full" />
           </div>
           <figcaption className="kapur mt-3 text-right text-xl text-bean/80">{KEDAI.patokan}</figcaption>
         </figure>
@@ -46,13 +46,14 @@ export function Hero() {
 
 export function BijiMingguIni() {
   return (
-    <section className="bg-crema-2 px-6 py-20 md:py-28">
+    <section className="bg-crema-2 px-6 py-16 md:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="menu-label text-bean/80">Biji dua minggu ini</p>
         <h2 className="mt-4 max-w-2xl text-[2.2rem] leading-[1.08] text-roast md:text-5xl">Empat kebun, empat cara menyeduh</h2>
-        <ul className="mt-12 grid gap-px bg-roast/15 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="-mx-6 mt-8 flex snap-x snap-mandatory gap-px overflow-x-auto bg-roast/15 px-0 sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-4" aria-label="Empat biji dua minggu ini">
           {BIJI.map((b) => (
-            <li key={b.nama} className="bg-crema-2 p-6">
+            <li key={b.nama} className="w-[78%] shrink-0 snap-start bg-crema-2 sm:w-auto">
+              <Link href="/menu" className="block h-full p-6 transition-colors hover:bg-crema focus-visible:outline-offset-[-4px]">
               <p className="menu-label text-bean/80">{b.asal}</p>
               <h3 className="mt-2 text-3xl text-roast">{b.nama}</h3>
               <p className="kapur mt-2 text-2xl leading-snug text-bean">{b.catatan}</p>
@@ -61,9 +62,11 @@ export function BijiMingguIni() {
                 <div className="flex items-center justify-between gap-3"><dt>Sangrai</dt><dd><Sangrai n={b.sangrai} /></dd></div>
                 <div className="flex justify-between gap-3"><dt>Dipakai untuk</dt><dd className="text-right text-roast">{b.pakai}</dd></div>
               </dl>
+              </Link>
             </li>
           ))}
         </ul>
+        <p className="menu-label mt-4 text-bean/70 sm:hidden" aria-hidden="true">Geser untuk biji lain →</p>
       </div>
     </section>
   );
@@ -71,9 +74,9 @@ export function BijiMingguIni() {
 
 export function MenuRingkas() {
   return (
-    <section className="bg-crema px-6 py-20 md:py-28">
+    <section className="bg-crema px-6 py-16 md:py-28">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="mb-8 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="menu-label text-bean/80">Dari papan menu</p>
             <h2 className="mt-4 text-[2.2rem] leading-[1.08] text-roast md:text-5xl">Yang paling sering dipesan</h2>
@@ -88,7 +91,7 @@ export function MenuRingkas() {
 
 export function Ruang() {
   return (
-    <section className="bg-roast px-6 py-20 text-crema md:py-28">
+    <section className="bg-roast px-6 py-16 text-crema md:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
         <div>
           <p className="menu-label text-[#e8c35a]">Ruangnya</p>
@@ -118,7 +121,7 @@ export function Ruang() {
 
 export function AcaraTeaser() {
   return (
-    <section className="bg-crema-2 px-6 py-20 md:py-24">
+    <section className="bg-crema-2 px-6 py-14 md:py-24">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-xl">
           <p className="menu-label text-bean/80">Di luar kedai</p>

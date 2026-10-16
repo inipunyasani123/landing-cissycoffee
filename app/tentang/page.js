@@ -22,7 +22,7 @@ export default function Tentang() {
             </div>
           </div>
           <div className="border-[12px] border-[#6b4a2e]">
-            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee" width={736} height={552} className="h-auto w-full" />
+            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee" width={736} height={552} sizes="(min-width: 1152px) 28rem, (min-width: 1024px) 40vw, 100vw" className="h-auto w-full" />
           </div>
         </div>
       </section>

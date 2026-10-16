@@ -22,6 +22,8 @@ const __jsonld = {
   address: { "@type": "PostalAddress", streetAddress: "Jl. Kenari Raya No. 27", addressLocality: "Malang", addressCountry: "ID" },
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "07:00", closes: "22:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "07:00", closes: "11:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "13:00", closes: "22:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday", "Sunday"], opens: "08:00", closes: "23:00" },
   ],
 };
