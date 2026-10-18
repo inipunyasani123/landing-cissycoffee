@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import FormKedai from '../components/FormKedai';
 import { ACARA, SITE } from '@/lib/kedai';
 
@@ -11,9 +12,16 @@ export default function Acara() {
   return (
     <main className="bg-crema px-6 pt-28 pb-24">
       <div className="mx-auto max-w-6xl">
-        <p className="menu-label text-bean/80">Kopi untuk acara</p>
-        <h1 className="mt-4 max-w-3xl text-[2.7rem] leading-[1.02] text-roast md:text-6xl">Kopi yang sama, di luar kedai</h1>
-        <p className="mt-5 max-w-xl text-lg leading-relaxed">Pesan paling lambat tiga hari sebelum acara. Untuk gerobak kopi, satu minggu.</p>
+        <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-12">
+          <div>
+            <p className="menu-label text-bean/80">Kopi untuk acara</p>
+            <h1 className="mt-4 max-w-3xl text-[2.7rem] leading-[1.02] text-roast md:text-6xl">Kopi yang sama, di luar kedai</h1>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed">Pesan paling lambat tiga hari sebelum acara. Untuk gerobak kopi, satu minggu.</p>
+          </div>
+          <figure className="border-[10px] border-[#6b4a2e]">
+            <Image src="/images/foto/seduh-manual.webp" alt="Dripper V60 di atas server kaca dan timbangan, di samping gelas berisi kopi seduh" width={960} height={640} priority sizes="(min-width: 1152px) 26rem, (min-width: 1024px) 38vw, 100vw" className="aspect-[3/2] h-auto w-full object-cover" />
+          </figure>
+        </div>
 
         <ul className="mt-14 grid gap-6 lg:grid-cols-3">
           {ACARA.map((a) => (

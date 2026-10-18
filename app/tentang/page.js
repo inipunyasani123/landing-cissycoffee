@@ -22,7 +22,7 @@ export default function Tentang() {
             </div>
           </div>
           <div className="border-[12px] border-[#6b4a2e]">
-            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee" width={736} height={552} sizes="(min-width: 1152px) 28rem, (min-width: 1024px) 40vw, 100vw" className="h-auto w-full" />
+            <Image src="/images/foto/ceri-kopi.webp" alt="Tangan memilah buah kopi merah yang baru dipetik dari karung" width={960} height={1200} priority sizes="(min-width: 1152px) 26rem, (min-width: 1024px) 38vw, 100vw" className="aspect-[4/3] h-auto w-full object-cover lg:aspect-[4/5]" />
           </div>
         </div>
       </section>
@@ -33,8 +33,8 @@ export default function Tentang() {
           <ul className="mt-12 grid gap-6 md:grid-cols-3">
             {TIM.map((t) => (
               <li key={t.nama} className="papan p-7">
-                <span aria-hidden="true" className="kapur text-5xl font-bold text-[#e8c35a]">{t.inisial}</span>
-                <h3 className="mt-3 text-2xl text-[#efeadf]">{t.nama}</h3>
+                <Image src={`/images/tim/${t.potret}.webp`} alt="" width={160} height={160} className="-mt-2 -ml-2 h-36 w-36 sm:h-40 sm:w-40" />
+                <h3 className="mt-2 text-2xl text-[#efeadf]">{t.nama}</h3>
                 <p className="kapur text-xl text-[#e8c35a]">{t.peran}</p>
                 <p className="mt-3 leading-relaxed text-[#efeadf]/85">{t.isi}</p>
               </li>
