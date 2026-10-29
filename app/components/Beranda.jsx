@@ -35,7 +35,7 @@ export function Hero() {
         </div>
         <figure className="relative">
           <div className="border-[12px] border-[#6b4a2e] shadow-[0_24px_50px_-28px_rgb(42_29_24/0.8)]">
-            <Image src="/images/bg1.jpg" alt="Tampak depan kedai Cissy Coffee dengan papan nama di atas pintu dan meja-meja di teras" width={736} height={552} loading="eager" sizes="(min-width: 1152px) 34rem, (min-width: 1024px) 46vw, 100vw" className="h-auto w-full" />
+            <Image src="/images/kedai/suasana-malam.jpg" alt="Sudut kedai kopi malam hari dengan lampu kuning hangat, kursi kayu, dan rak berisi pigura" width={1200} height={900} loading="eager" sizes="(min-width: 1152px) 34rem, (min-width: 1024px) 46vw, 100vw" className="h-auto w-full" />
           </div>
           <figcaption className="kapur mt-3 text-right text-xl text-bean/80">{KEDAI.patokan}</figcaption>
         </figure>
@@ -54,6 +54,7 @@ export function BijiMingguIni() {
           {BIJI.map((b) => (
             <li key={b.nama} className="w-[78%] shrink-0 snap-start bg-crema-2 sm:w-auto">
               <Link href="/menu" className="block h-full p-6 transition-colors hover:bg-crema focus-visible:outline-offset-[-4px]">
+              <Image src={`/images/biji/${b.nama.toLowerCase()}.jpg`} alt={`Biji kopi ${b.nama} sangrai`} width={800} height={600} sizes="(min-width: 1024px) 18rem, (min-width: 640px) 40vw, 70vw" className="mb-5 aspect-[4/3] w-full object-cover" />
               <p className="menu-label text-bean/80">{b.asal}</p>
               <h3 className="mt-2 text-3xl text-roast">{b.nama}</h3>
               <p className="kapur mt-2 text-2xl leading-snug text-bean">{b.catatan}</p>
@@ -105,7 +106,9 @@ export function Ruang() {
             ))}
           </ul>
         </div>
-        <div className="papan h-fit p-8">
+        <div className="h-fit">
+        <Image src="/images/kedai/ruang-siang.jpg" alt="Ruang kedai kopi dengan kursi dan meja kayu terang, dinding abu muda berhias piring dan talenan" width={1200} height={900} sizes="(min-width: 1024px) 28rem, 100vw" className="mb-6 aspect-[4/3] w-full border-[10px] border-[#6b4a2e] object-cover" />
+        <div className="papan p-8">
           <h2 className="kapur text-4xl font-bold text-[#e8c35a]">Jam buka</h2>
           <dl className="kapur-garis mt-4 space-y-3 pt-4">
             {JAM.map(([h, j]) => (
@@ -113,6 +116,7 @@ export function Ruang() {
             ))}
           </dl>
           <p className="kapur mt-5 text-xl text-[#efeadf]/85">Jumat siang tutup sebentar untuk salat Jumat.</p>
+        </div>
         </div>
       </div>
     </section>
