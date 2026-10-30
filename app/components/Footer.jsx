@@ -21,11 +21,11 @@ export default function Footer() {
         </div>
         <nav aria-label="Halaman">
           <p className="menu-label mb-4 text-[#e8c35a]">Halaman</p>
-          <ul className="space-y-2.5 text-sm text-crema/80">
-            <li><Link href="/menu" className="hover:text-crema">Papan menu</Link></li>
-            <li><Link href="/tentang" className="hover:text-crema">Tentang kami</Link></li>
-            <li><Link href="/acara" className="hover:text-crema">Kopi untuk acara</Link></li>
-            <li><Link href="/kontak" className="hover:text-crema">Kontak & arah</Link></li>
+          <ul className="space-y-0.5 text-sm text-crema/80">
+            <li><Link href="/menu" className="inline-block py-3 hover:text-crema">Papan menu</Link></li>
+            <li><Link href="/tentang" className="inline-block py-3 hover:text-crema">Tentang kami</Link></li>
+            <li><Link href="/acara" className="inline-block py-3 hover:text-crema">Kopi untuk acara</Link></li>
+            <li><Link href="/kontak" className="inline-block py-3 hover:text-crema">Kontak & arah</Link></li>
           </ul>
         </nav>
       </div>

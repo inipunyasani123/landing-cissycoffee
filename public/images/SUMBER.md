@@ -44,7 +44,7 @@ Semua dari WordPress Photo Directory (wordpress.org/photos), lisensi CC0. Dipoto
 
 ## Ilustrasi buatan sendiri
 - `tim/cecilia-santoso.webp`, `tim/dimas-prakoso.webp`, `tim/ratna-ayu.webp` — potret gaya kapur
-  untuk tokoh fiktif, digambar sebagai SVG lalu diekspor ke WebP. Bukan foto orang sungguhan.
+  untuk tokoh fiktif, digambar sebagai SVG lalu diekspor ke WebP. Bukan foto orang sungguhan. Diganti 30 Okt 2026 menjadi tampilan tanpa wajah (tanpa mata dan mulut).
 
 
 Gambar etalase lama `bg1.jpg` (asal tak tercatat) sudah dihapus dan diganti foto CC0 di atas.

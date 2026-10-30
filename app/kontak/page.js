@@ -26,7 +26,7 @@ export default function Kontak() {
             <section aria-labelledby="alamat">
               <h2 id="alamat" className="text-3xl text-roast">Alamat</h2>
               <address className="mt-3 text-lg leading-relaxed not-italic">{KEDAI.alamat}<br />{KEDAI.patokan}</address>
-              <p className="mt-3">Surel: <a href={`mailto:${KEDAI.surel}`} className="font-semibold text-roast underline underline-offset-4">{KEDAI.surel}</a></p>
+              <p className="mt-3">Surel: <a href={`mailto:${KEDAI.surel}`} className="inline-block py-2 font-semibold text-roast underline underline-offset-4">{KEDAI.surel}</a></p>
             </section>
             <section aria-labelledby="arah">
               <h2 id="arah" className="text-3xl text-roast">Cara ke sana</h2>

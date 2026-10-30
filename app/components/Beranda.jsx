@@ -82,7 +82,7 @@ export function MenuRingkas() {
             <p className="menu-label text-bean/80">Dari papan menu</p>
             <h2 className="mt-4 text-[2.2rem] leading-[1.08] text-roast md:text-5xl">Yang paling sering dipesan</h2>
           </div>
-          <Link href="/menu" className="menu-label shrink-0 border-b-2 border-roast pb-1 text-roast">Papan menu lengkap</Link>
+          <Link href="/menu" className="menu-label inline-flex min-h-11 shrink-0 items-center border-b-2 border-roast text-roast">Papan menu lengkap</Link>
         </div>
         <PapanMenu ringkas />
       </div>
